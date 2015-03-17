@@ -1,0 +1,26 @@
+{
+  "name": "react-analytics",
+  "version": "1.0.0",
+  "description": "A React component that renders the segment.io snippet.",
+  "main": "Snippet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanrs/react-analytics.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "analytics",
+    "segment",
+    "segmentio"
+  ],
+  "author": "Evan Schneider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanrs/react-analytics/issues"
+  },
+  "homepage": "https://github.com/evanrs/react-analytics"
+}
