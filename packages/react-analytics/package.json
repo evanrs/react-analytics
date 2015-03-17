@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/evanrs/react-analytics/issues"
   },
-  "homepage": "https://github.com/evanrs/react-analytics"
+  "homepage": "https://github.com/evanrs/react-analytics",
+  "dependencies": {
+    "react": "^0.12.2",
+    "segmentio-snippet": "^3.0.1"
+  }
 }
