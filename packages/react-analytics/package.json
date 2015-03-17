@@ -1,6 +1,6 @@
 {
   "name": "react-analytics",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React component that renders the segment.io snippet.",
   "main": "Snippet.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "react",
     "react-component",
-    "react-segement"
+    "react-segement",
     "analytics",
     "segment",
     "segmentio"
