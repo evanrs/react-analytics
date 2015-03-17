@@ -2,7 +2,7 @@ var React = require('react');
 var segmentioSnippet = require('segmentio-snippet');
 
 var SegmentioSnippet = React.createClass({
-    render() {
+    render: function renderSegmeniotSnippet () {
         var snippet, user;
         if(this.props.writeKey) {
             // Generate snippet code
@@ -23,10 +23,11 @@ var SegmentioSnippet = React.createClass({
 
         }
         else {
-            return <!-- SegmentIO writeKey not defined -->
+            return React.createElement(
+                'script', {}, '// SegmentIO writeKey not defined');
         }
     }
 
 });
 
-export default SegmentioSnippet;
+module.exports = SegmentioSnippet;
