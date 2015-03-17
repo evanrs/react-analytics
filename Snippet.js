@@ -17,7 +17,7 @@ var SegmentioSnippet = React.createClass({
             }
             // Inject code into script tag
             return React.createElement('script', {
-                dangerouslySetInnerHTML={__html: snippet},
+                dangerouslySetInnerHTML: {__html: snippet},
                 type: "text/javascript"
             });
 
