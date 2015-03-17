@@ -1,6 +1,6 @@
 {
   "name": "react-analytics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React component that renders the segment.io snippet.",
   "main": "Snippet.js",
   "scripts": {
