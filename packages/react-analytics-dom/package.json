@@ -1,7 +1,7 @@
 {
-  "name": "react-analytics",
+  "name": "react-analytics-dom",
   "version": "2.0.0-alpha",
-  "description": "Declarative analytics for React",
+  "description": "DOM bindings for React Analytics",
   "main": "es/index.js",
   "scripts": {
     "build": "NODE_ENV=production babel src -d es",
