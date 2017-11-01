@@ -1,4 +1,14 @@
-import { assign, every, get, isFunction, isMatch, isObject, keys, mapValues, pick } from 'lodash'
+import {
+  assign,
+  every,
+  get,
+  isFunction,
+  isMatch,
+  isObject,
+  keys,
+  mapValues,
+  pick,
+} from 'lodash'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -17,7 +27,8 @@ export function createAnalyticsComponent({
     select = (props, context) => pick(props, keys(propTypes))
   } else if (isObject(select) && !isFunction(select)) {
     const paths = select
-    select = (props, context) => mapValues(paths, path => get(props, path) || get(context, path))
+    select = (props, context) =>
+      mapValues(paths, path => get(props, path) || get(context, path))
   }
 
   if (!shouldComponentUpdate) {
@@ -57,7 +68,8 @@ export function createAnalyticsComponent({
 
     shouldUpdate = shouldComponentUpdate.bind(this)
 
-    update = (props, context) => this.context.analytics[method](select(props, context), options)
+    update = (props, context) =>
+      this.context.analytics[method](select(props, context), options)
 
     render() {
       return this.props.children || null
