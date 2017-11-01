@@ -1,9 +1,14 @@
 {
   "private": true,
-  "devDependencies": {
-    "lerna": "^2.0.0"
+  "scripts": {
+    "clean": "lerna run clean",
+    "precommit": "source ./.precommit.sh && pretty-quick --staged"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lerna": "^2.9.0",
+    "prettier": "^1.11.1",
+    "pretty-quick": "^1.4.1"
+  },
+  "workspaces": ["packages/*"]
 }

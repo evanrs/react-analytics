@@ -11,12 +11,7 @@
     "type": "git",
     "url": "https://github.com/evanrs/react-analytics.git"
   },
-  "keywords": [
-    "react",
-    "analytics",
-    "ssr",
-    "universal"
-  ],
+  "keywords": ["react", "analytics", "ssr", "universal"],
   "author": "Evan Schneider",
   "license": "MIT",
   "bugs": {
@@ -24,8 +19,10 @@
   },
   "homepage": "https://github.com/evanrs/react-analytics",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
     "babel-preset-react-analytics": "^2.0.0-alpha",
-    "lodash-es": "^4.17.4",
-    "react": "^16.0.0-beta.3"
+    "lodash-es": "^4.17.7",
+    "react": "^16.0.0"
   }
 }

@@ -1,10 +1,9 @@
-const preset = require('babel-preset-react-app');
-
+const preset = require("babel-preset-react-app");
 
 module.exports = Object.assign({}, preset, {
-    plugins: [
-        'lodash',
-        'external-helpers',
-        ...preset.plugins,
-    ]
-})
+  plugins: [
+    "@babel/plugin-external-helpers",
+    "babel-plugin-lodash",
+    ...preset.plugins
+  ]
+});
